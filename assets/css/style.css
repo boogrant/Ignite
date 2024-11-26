@@ -20,6 +20,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* Ensure padding and borders don’t affect layout */
+    overflow-x: hidden;
 }
 /* Navbar */
 .navbar {
@@ -30,18 +31,21 @@ body {
     background-color: var(--primary-navy);
     color: var(--text-white);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Allow the content to wrap on small screens */
 }
 
 .navbar .logo {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
+    flex: 1; /* Make logo flexible */
 }
 
 .navbar .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap; /* Allow links to wrap to the next line */
 }
 
 .navbar .nav-links a {
@@ -55,19 +59,21 @@ body {
     color: var(--accent-gray);
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
     background: linear-gradient(135deg, var(--primary-navy), var(--accent-gray));
     color: var(--text-white);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 .hero h1 {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .hero p {
@@ -76,7 +82,6 @@ body {
     color: var(--secondary-beige);
 }
 
-/* Content Sections */
 .content-section {
     padding: 2rem;
     margin: 2rem auto;
@@ -86,6 +91,8 @@ body {
     color: var(--text-white);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Allow the content to scale on small screens */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 .content-section h2 {
@@ -112,26 +119,19 @@ footer {
 @media (max-width: 768px) {
     /* Navbar Adjustments */
     .navbar {
-        padding: 1rem;
         flex-direction: column;
         align-items: flex-start;
     }
 
     .navbar .logo {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .navbar .nav-links {
-        list-style: none;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .navbar .nav-links a {
-        font-size: 1rem;
     }
 
     /* Hero Section Adjustments */
@@ -140,13 +140,13 @@ footer {
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
-    /* Content Sections Adjustments */
+    /* Content Section Adjustments */
     .content-section {
         padding: 1.5rem;
-        max-width: 90%; /* Allow content to scale properly */
+        width: 90%;
     }
 
     .content-section h2 {
