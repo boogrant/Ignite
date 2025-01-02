@@ -1,0 +1,79 @@
+.about-page {
+    font-family: 'Madegra', sans-serif;
+    color: #1C3D5A; /* Deep Navy */
+    background-color: #F5F1E8; /* Soft Beige */
+}
+
+header {
+    background-color: #1C3D5A;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #1C3D5A;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #A9B2C3;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #6082B6; /* Highlight color */
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #1C3D5A;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2em;
+    }
+    section p {
+        font-size: 1em;
+    }
+}
