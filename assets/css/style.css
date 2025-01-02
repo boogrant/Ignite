@@ -1,0 +1,110 @@
+/* assets/css/style.css */
+
+/* Updated Root Variables */
+:root {
+    --primary-navy: #1C3D5A;
+    --secondary-beige: #F5F1E8;
+    --accent-gray: #A9B2C3;
+    --text-white: #FFFFFF;
+    --text-dark: #333;
+    --font-heading: 'Nunito', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* General Body Styles */
+body {
+    font-family: var(--font-body);
+    background-color: var(--secondary-beige);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-navy);
+    color: var(--text-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--accent-gray);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--primary-navy), var(--accent-gray));
+    color: var(--text-white);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--secondary-beige);
+}
+
+/* Content Sections */
+.content-section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: var(--primary-navy);
+    color: var(--text-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-beige);
+}
+
+.content-section p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-navy);
+    color: var(--text-white);
+    font-size: 0.9rem;
+    border-top: 2px solid var(--accent-gray);
+}
